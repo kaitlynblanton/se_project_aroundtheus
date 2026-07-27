@@ -1,12 +1,15 @@
 .header {
   display: flex;
+  flex-direction: column;
 }
 
 .header__image {
+  height: 33px;
+  width: 173px;
+  margin: 45px 0 41px;
 }
 
 .header__border {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #545454;
   flex-grow: 1;
-  /* max-width: ; */
 }
