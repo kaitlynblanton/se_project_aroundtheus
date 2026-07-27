@@ -1,4 +1,12 @@
 .header {
-  border-bottom: 1px;
+  display: flex;
+}
+
+.header__image {
+}
+
+.header__border {
+  border-bottom: 1px solid #fff;
   flex-grow: 1;
+  /* max-width: ; */
 }
