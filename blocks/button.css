@@ -30,3 +30,13 @@
   height: 50px;
   border: solid 2px #fff;
 }
+
+.button_type_heart {
+  border: none;
+  background-color: #fff;
+}
+
+.button__icon_type_heart {
+  height: 21px;
+  width: 18px;
+}
