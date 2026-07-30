@@ -5,6 +5,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.4s ease;
+}
+
+.button:hover {
+  opacity: 60%;
+  cursor: pointer;
 }
 
 .button__icon_type_edit {
@@ -37,10 +43,16 @@
 .button_type_heart {
   border: none;
   background-color: #fff;
+  transition: opacity 0.4s ease;
+}
+
+.button_type_heart:hover {
+  opacity: 50%;
+  cursor: pointer;
 }
 
 .button__icon_type_heart {
-  height: 21px;
+  height: 20px;
   width: 18px;
 }
 
