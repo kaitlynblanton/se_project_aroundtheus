@@ -13,3 +13,25 @@
   max-width: 880px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1140px) {
+  .page {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .page {
+    padding: 0 75px;
+  }
+}
+
+@media screen and (max-width: 477px) {
+  .page {
+    padding: 0;
+  }
+
+  .content {
+    padding: 0 19px;
+  }
+}

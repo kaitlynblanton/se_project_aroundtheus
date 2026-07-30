@@ -35,3 +35,39 @@
 .profile__button {
   background-color: #000;
 }
+
+@media screen and (max-width: 1140px) {
+  .profile__name {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile__image {
+    margin: 0 0 30px;
+  }
+
+  .profile__name {
+    margin: 0 0 14px;
+  }
+
+  .profile__description {
+    margin: 0 0 36px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 477px) {
+  .profile__name {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .profile__description {
+    font-size: 14px;
+  }
+}

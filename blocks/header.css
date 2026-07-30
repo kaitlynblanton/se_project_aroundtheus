@@ -6,12 +6,20 @@
 }
 
 .header__image {
-  height: 33px;
   width: 173px;
+  height: 33px;
   margin: 45px 0 41px;
 }
 
 .header__border {
   border-bottom: 1px solid #545454;
   flex-grow: 1;
+}
+
+@media screen and (max-width: 477px) {
+  .header__image {
+    width: 126px;
+    height: 24px;
+    margin: 28px 0 32px 27px;
+  }
 }
