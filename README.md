@@ -15,3 +15,5 @@ This is the third project of the Software Enginerring program at TripleTen. It w
 
 - Fix the element sizing using % or em to achive a smoother page responsiveness on multiple screen sizes.
 - Add javascript to achieve someone being able to add their own destination post.
+
+## 🔗 [Live Deployment to GitHub Pages](https://kaitlynblanton.github.io/se_project_aroundtheus/)
