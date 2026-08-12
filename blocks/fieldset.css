@@ -1,0 +1,8 @@
+.fieldset__border {
+  border: solid 0.5px rgba(0, 0, 0, 0.2);
+  margin: 0 0 30px;
+}
+
+.edit-form__fieldset:last-of-type .fieldset__border {
+  margin: 0 0 48px;
+}

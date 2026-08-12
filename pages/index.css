@@ -3,10 +3,14 @@
 
 @import url("../blocks/page.css");
 
+@import url("../blocks/edit-modal.css");
+@import url("../blocks/edit-form.css");
+@import url("../blocks/fieldset.css");
+@import url("../blocks/button.css");
+
 @import url("../blocks/header.css");
 
 @import url("../blocks/profile.css");
-@import url("../blocks/button.css");
 
 @import url("../blocks/gallery.css");
 @import url("../blocks/card.css");
