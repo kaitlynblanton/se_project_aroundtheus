@@ -16,12 +16,15 @@
     />
 
     <link rel="stylesheet" href="./pages/index.css" />
-    <!-- <link rel="icon" href="./favicon.ico"> -->
+    <link rel="icon" href="./favicon.ico" />
   </head>
 
   <body>
     <div class="page">
-      <div class="page__overlay"></div>
+      <div
+        class="page__overlay page__overlay_closed-modal"
+        id="modal-background-overlay"
+      ></div>
 
       <header class="header">
         <img
@@ -43,7 +46,10 @@
           <div>
             <div class="profile__user-info">
               <h1 class="profile__name">Jacques Cousteau</h1>
-              <button class="profile__button button button_type_edit">
+              <button
+                class="profile__button button button_type_edit"
+                id="profile-edit-button"
+              >
                 <img
                   src="./images/edit-icon.svg"
                   alt="Edit user information"
@@ -179,12 +185,13 @@
         <p class="footer__copyright">&copy; 2026 Around The U.S.</p>
       </footer>
 
-      <dialog class="edit-modal">
+      <dialog class="edit-modal edit-modal_closed" id="edit-profile-modal">
         <button class="edit-modal__button button button_type_close-modal">
           <img
             src="./images/add-icon.svg"
             alt="Close the edit profile window."
             class="button__icon button__icon_type_close-modal"
+            id="close-modal-button"
           />
         </button>
 

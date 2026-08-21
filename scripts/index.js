@@ -1,38 +1,41 @@
-const yosemiteValley = {
-  name: "Yosemite Valley",
-  link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
-};
-
-const lakeLouise = {
-  name: "Lake Louise",
-  link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lake-louise.jpg",
-};
-
-const baldMountains = {
-  name: "Bald Mountains",
-  link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/bald-mountains.jpg",
-};
-
-const latemar = {
-  name: "Latemar",
-  link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg",
-};
-
-const vanoise = {
-  name: "Vanoise National Park",
-  link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/vanoise.jpg",
-};
-
-const lago = {
-  name: "Lago di Braies",
-  link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
-};
-
-let initialCards = [
-  yosemiteValley,
-  lakeLouise,
-  baldMountains,
-  latemar,
-  vanoise,
-  lago,
+const initialCards = [
+  {
+    name: "Yosemite Valley",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
+  },
+  {
+    name: "Lake Louise",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lake-louise.jpg",
+  },
+  {
+    name: "Bald Mountains",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/bald-mountains.jpg",
+  },
+  {
+    name: "Latemar",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/latemar.jpg",
+  },
+  {
+    name: "Vanoise National Park",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/vanoise.jpg",
+  },
+  {
+    name: "Lago di Braies",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
+  },
 ];
+
+const editProfileModal = document.querySelector("#edit-profile-modal");
+const pageOverlay = document.querySelector("#modal-background-overlay");
+const editButton = document.querySelector("#profile-edit-button");
+const closeModalButton = document.querySelector("#close-modal-button");
+
+editButton.addEventListener("click", function () {
+  editProfileModal.classList.remove("edit-modal_closed");
+  pageOverlay.classList.remove("page__overlay_closed-modal");
+});
+
+closeModalButton.addEventListener("click", function () {
+  editProfileModal.classList.add("edit-modal_closed");
+  pageOverlay.classList.add("page__overlay_closed-modal");
+});

@@ -15,7 +15,7 @@
 }
 
 .page__overlay {
-  display: none;
+  display: block;
   background: rgba(0, 0, 0, 0.5);
   pointer-events: none;
   width: 100vw;
@@ -24,6 +24,10 @@
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.page__overlay_closed-modal {
+  display: none;
 }
 
 @media screen and (max-width: 1140px) {
