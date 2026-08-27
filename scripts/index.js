@@ -25,6 +25,26 @@ const initialCards = [
   },
 ];
 
+const cardsContainer = document.querySelector("#card-gallery");
+const cardTemplate = document.querySelector("#card-template").content;
+
+function getCardElement(data) {
+  const cardElement = cardTemplate.querySelector("#card").cloneNode(true);
+
+  let cardImage = cardElement.querySelector("#card-image");
+  let cardTitle = cardElement.querySelector("#card-title");
+
+  cardImage.src = data.link;
+  cardImage.alt = data.name;
+  cardTitle.textContent = data.name;
+
+  cardsContainer.prepend(cardElement);
+}
+
+for (let i = 0; i <= initialCards.length; i++) {
+  getCardElement(initialCards[i]);
+}
+
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const pageOverlay = document.querySelector("#modal-background-overlay");
 const editButton = document.querySelector("#profile-edit-button");

@@ -72,114 +72,27 @@
         </section>
 
         <section class="gallery">
-          <ul class="gallery__cards">
-            <li class="card">
-              <img
-                src="./images/yosemite.jpg"
-                alt="A river flowing through a pine forest with a granite cliff."
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Yosemite Valley</h2>
-                <button class="card__button button button_type_heart">
-                  <img
-                    src="./images/heart-icon.svg"
-                    alt="Like this post"
-                    class="button__icon button__icon_type_heart"
-                  />
-                </button>
-              </div>
-            </li>
+          <ul class="gallery__cards" id="card-gallery">
+            <template class="card-template" id="card-template">
+              <li class="card" id="card">
+                <img
+                  alt="Destination image."
+                  class="card__image"
+                  id="card-image"
+                />
 
-            <li class="card">
-              <img
-                src="./images/lake-louise.jpg"
-                alt="Turquoise alpine lake surrounded by towering peaks and glaciers in Banff National Park."
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Lake Louise</h2>
-                <button class="card__button button button_type_heart">
-                  <img
-                    src="./images/heart-icon.svg"
-                    alt="Like this post"
-                    class="button__icon button__icon_type_heart"
-                  />
-                </button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/bald-mountains.jpg"
-                alt="Sweeping mountain ridges beneath a sunrise across the horizon."
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Bald Mountains</h2>
-                <button class="card__button button button_type_heart">
-                  <img
-                    src="./images/heart-icon.svg"
-                    alt="Like this post"
-                    class="button__icon button__icon_type_heart"
-                  />
-                </button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/latemar.jpg"
-                alt="Jagged Dolomite peaks beneath a star-filled sky."
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Latemar</h2>
-                <button class="card__button button button_type_heart">
-                  <img
-                    src="./images/heart-icon.svg"
-                    alt="Like this post"
-                    class="button__icon button__icon_type_heart"
-                  />
-                </button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/vanoise.jpg"
-                alt="Alpine lake reflecting snow-capped mountains."
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Vanoise National Park</h2>
-                <button class="card__button button button_type_heart">
-                  <img
-                    src="./images/heart-icon.svg"
-                    alt="Like this post"
-                    class="button__icon button__icon_type_heart"
-                  />
-                </button>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/lago.jpg"
-                alt="Crystal-clear alpine lake with wooden boats and dramatic Dolomite peaks."
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Lago di Braies</h2>
-                <button class="card__button button button_type_heart">
-                  <img
-                    src="./images/heart-icon.svg"
-                    alt="Like this post"
-                    class="button__icon button__icon_type_heart"
-                  />
-                </button>
-              </div>
-            </li>
+                <div class="card__content">
+                  <h2 class="card__title" id="card-title"></h2>
+                  <button class="card__button button button_type_heart">
+                    <img
+                      src="./images/heart-icon.svg"
+                      alt="Like this post"
+                      class="button__icon button__icon_type_heart"
+                    />
+                  </button>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
