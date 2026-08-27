@@ -39,3 +39,22 @@ closeModalButton.addEventListener("click", function () {
   editProfileModal.classList.add("edit-modal_closed");
   pageOverlay.classList.add("page__overlay_closed-modal");
 });
+
+const editProfileForm = document.querySelector("#edit-form");
+const saveButton = document.querySelector("#save-button");
+const profileName = document.querySelector("#profile-name");
+const profileDescription = document.querySelector("#profile-description");
+const nameInput = document.querySelector("#user-name");
+const descriptionInput = document.querySelector("#user-description");
+
+function handleProfileFormSubmit(evt) {
+  evt.preventDefault();
+
+  profileName.textContent = nameInput.value;
+  profileDescription.textContent = descriptionInput.value;
+
+  editProfileModal.classList.add("edit-modal_closed");
+  pageOverlay.classList.add("page__overlay_closed-modal");
+}
+
+editProfileForm.addEventListener("submit", handleProfileFormSubmit);

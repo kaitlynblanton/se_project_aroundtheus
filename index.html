@@ -45,7 +45,7 @@
 
           <div>
             <div class="profile__user-info">
-              <h1 class="profile__name">Jacques Cousteau</h1>
+              <h1 class="profile__name" id="profile-name">Jacques Cousteau</h1>
               <button
                 class="profile__button button button_type_edit"
                 id="profile-edit-button"
@@ -57,7 +57,9 @@
                 />
               </button>
             </div>
-            <p class="profile__description">Explorer</p>
+            <p class="profile__description" id="profile-description">
+              Explorer
+            </p>
           </div>
 
           <button class="profile__button button button_type_add">
@@ -195,7 +197,7 @@
           />
         </button>
 
-        <form action="#" class="edit-form">
+        <form action="#" class="edit-form" id="edit-form">
           <h2 class="edit-form__title">Edit profile</h2>
 
           <fieldset class="edit-form__fieldset fieldset">
@@ -205,7 +207,7 @@
               id="user-name"
               value="Jacques Cousteau"
               placeholder="Name Surname"
-              class="edit-form__input"
+              class="edit-form__input edit-form__input_type_name"
               required
             />
 
@@ -219,14 +221,17 @@
               id="user-description"
               value="Explorer"
               placeholder="Tell us about yourself..."
-              class="edit-form__input"
+              class="edit-form__input edit-form__input_type_description"
               required
             />
 
             <div class="fieldset__border"></div>
           </fieldset>
 
-          <button class="edit-form__button button button_type_submit">
+          <button
+            class="edit-form__button button button_type_submit"
+            id="save-button"
+          >
             Save
           </button>
         </form>
