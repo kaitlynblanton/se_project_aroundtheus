@@ -1,3 +1,4 @@
+// add cards to webpage
 const initialCards = [
   {
     name: "Yosemite Valley",
@@ -41,10 +42,11 @@ function getCardElement(data) {
   cardsContainer.prepend(cardElement);
 }
 
-for (let i = 0; i <= initialCards.length; i++) {
+for (let i = 0; i < initialCards.length; i++) {
   getCardElement(initialCards[i]);
 }
 
+// edit profile modal
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const pageOverlay = document.querySelector("#modal-background-overlay");
 const editButton = document.querySelector("#profile-edit-button");
