@@ -39,12 +39,14 @@ function getCardElement(data) {
   cardImage.alt = data.name;
   cardTitle.textContent = data.name;
 
-  cardsContainer.prepend(cardElement);
+  return cardElement;
 }
 
-for (let i = 0; i < initialCards.length; i++) {
-  getCardElement(initialCards[i]);
-}
+initialCards.forEach((cardData) => {
+  const cardElement = getCardElement(cardData);
+
+  cardsContainer.prepend(cardElement);
+});
 
 // edit profile modal
 const editProfileModal = document.querySelector("#edit-profile-modal");
