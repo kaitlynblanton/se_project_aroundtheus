@@ -24,6 +24,10 @@
   font-size: 14px;
 }
 
+.form__input::placeholder {
+  color: rgba(196, 196, 196, 1);
+}
+
 @media screen and (max-width: 653px) {
   .form__title {
     margin: 0 0 75px;

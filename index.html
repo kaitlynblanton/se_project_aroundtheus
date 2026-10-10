@@ -149,6 +149,56 @@
           </button>
         </form>
       </dialog>
+
+      <dialog class="modal modal_closed" id="add-destination-modal">
+        <button class="modal__button button button_type_close-modal">
+          <img
+            src="./images/add-icon.svg"
+            alt="Close the add destination window."
+            class="button__icon button__icon_type_close-modal"
+            id="close-modal-button"
+          />
+        </button>
+
+        <form action="#" class="form" id="add-destination-form">
+          <h2 class="form__title">New place</h2>
+
+          <fieldset class="form__fieldset fieldset">
+            <label for="destination-title" class="form__label"></label>
+            <input
+              type="text"
+              id="destination-title"
+              value=""
+              placeholder="Title"
+              class="form__input form__input_type_name"
+              required
+            />
+
+            <div class="fieldset__border"></div>
+          </fieldset>
+
+          <fieldset class="form__fieldset fieldset">
+            <label for="destination-image" class="form__label"></label>
+            <input
+              type="text"
+              id="destination-image"
+              value=""
+              placeholder="Image link"
+              class="form__input form__input_type_description"
+              required
+            />
+
+            <div class="fieldset__border"></div>
+          </fieldset>
+
+          <button
+            class="form__button button button_type_submit"
+            id="save-button"
+          >
+            Create
+          </button>
+        </form>
+      </dialog>
     </div>
 
     <script src="./scripts/index.js"></script>
