@@ -86,3 +86,34 @@ function handleProfileFormSubmit(evt) {
 }
 
 editProfileForm.addEventListener("submit", handleProfileFormSubmit);
+
+// add new destination modal
+const addDestinationModal = document.querySelector("#add-destination-modal");
+const addButton = document.querySelector("#add-button");
+
+addButton.addEventListener("click", function () {
+  addDestinationModal.classList.remove("modal_closed");
+  pageOverlay.classList.remove("page__overlay_closed-modal");
+});
+
+const addDestinationForm = document.querySelector("#add-destination-form");
+const createButton = document.querySelector("#create-button");
+const titleInput = document.querySelector("#destination-title");
+const imageInput = document.querySelector("#destination-image");
+
+function handleDestinationFormSubmit(evt) {
+  evt.preventDefault();
+
+  let newCard = {
+    link: imageInput.value,
+    name: titleInput.value,
+  };
+
+  const cardElement = getCardElement(newCard);
+  cardsContainer.prepend(cardElement);
+
+  addDestinationModal.classList.add("modal_closed");
+  pageOverlay.classList.add("page__overlay_closed-modal");
+}
+
+addDestinationForm.addEventListener("submit", handleDestinationFormSubmit);
