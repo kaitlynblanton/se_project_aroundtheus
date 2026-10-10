@@ -24,10 +24,17 @@
   position: fixed;
   top: 0;
   left: 0;
+
+  visibility: visible;
+  opacity: 1;
+  transition:
+    visibility 0.2s,
+    opacity 0.2s linear;
 }
 
 .page__overlay_closed-modal {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1140px) {
