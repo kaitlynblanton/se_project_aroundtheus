@@ -48,20 +48,24 @@ initialCards.forEach((cardData) => {
   cardsContainer.prepend(cardElement);
 });
 
+// close modals
+const closeModalButton = document.querySelectorAll(".button_type_close-modal");
+
+closeModalButton.forEach((button) => {
+  button.addEventListener("click", function (evt) {
+    evt.target.closest(".modal").classList.add("modal_closed");
+    pageOverlay.classList.add("page__overlay_closed-modal");
+  });
+});
+
 // edit profile modal
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const pageOverlay = document.querySelector("#modal-background-overlay");
 const editButton = document.querySelector("#profile-edit-button");
-const closeModalButton = document.querySelector("#close-modal-button");
 
 editButton.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_closed");
   pageOverlay.classList.remove("page__overlay_closed-modal");
-});
-
-closeModalButton.addEventListener("click", function () {
-  editProfileModal.classList.add("modal_closed");
-  pageOverlay.classList.add("page__overlay_closed-modal");
 });
 
 const editProfileForm = document.querySelector("#edit-form");
