@@ -100,8 +100,8 @@
         <p class="footer__copyright">&copy; 2026 Around The U.S.</p>
       </footer>
 
-      <dialog class="edit-modal edit-modal_closed" id="edit-profile-modal">
-        <button class="edit-modal__button button button_type_close-modal">
+      <dialog class="modal modal_closed" id="edit-profile-modal">
+        <button class="modal__button button button_type_close-modal">
           <img
             src="./images/add-icon.svg"
             alt="Close the edit profile window."
@@ -110,31 +110,31 @@
           />
         </button>
 
-        <form action="#" class="edit-form" id="edit-form">
-          <h2 class="edit-form__title">Edit profile</h2>
+        <form action="#" class="form" id="edit-form">
+          <h2 class="form__title">Edit profile</h2>
 
-          <fieldset class="edit-form__fieldset fieldset">
-            <label for="user-name" class="edit-form__label"></label>
+          <fieldset class="form__fieldset fieldset">
+            <label for="user-name" class="form__label"></label>
             <input
               type="text"
               id="user-name"
               value="Jacques Cousteau"
               placeholder="Name Surname"
-              class="edit-form__input edit-form__input_type_name"
+              class="form__input form__input_type_name"
               required
             />
 
             <div class="fieldset__border"></div>
           </fieldset>
 
-          <fieldset class="edit-form__fieldset fieldset">
-            <label for="user-description" class="edit-form__label"></label>
+          <fieldset class="form__fieldset fieldset">
+            <label for="user-description" class="form__label"></label>
             <input
               type="text"
               id="user-description"
               value="Explorer"
               placeholder="Tell us about yourself..."
-              class="edit-form__input edit-form__input_type_description"
+              class="form__input form__input_type_description"
               required
             />
 
@@ -142,7 +142,7 @@
           </fieldset>
 
           <button
-            class="edit-form__button button button_type_submit"
+            class="form__button button button_type_submit"
             id="save-button"
           >
             Save

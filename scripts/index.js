@@ -55,12 +55,12 @@ const editButton = document.querySelector("#profile-edit-button");
 const closeModalButton = document.querySelector("#close-modal-button");
 
 editButton.addEventListener("click", function () {
-  editProfileModal.classList.remove("edit-modal_closed");
+  editProfileModal.classList.remove("modal_closed");
   pageOverlay.classList.remove("page__overlay_closed-modal");
 });
 
 closeModalButton.addEventListener("click", function () {
-  editProfileModal.classList.add("edit-modal_closed");
+  editProfileModal.classList.add("modal_closed");
   pageOverlay.classList.add("page__overlay_closed-modal");
 });
 
@@ -77,7 +77,7 @@ function handleProfileFormSubmit(evt) {
   profileName.textContent = nameInput.value;
   profileDescription.textContent = descriptionInput.value;
 
-  editProfileModal.classList.add("edit-modal_closed");
+  editProfileModal.classList.add("modal_closed");
   pageOverlay.classList.add("page__overlay_closed-modal");
 }
 

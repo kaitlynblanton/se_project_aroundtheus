@@ -1,22 +1,22 @@
-.edit-form__title {
+.form__title {
   margin: 0 0 54px;
   font-weight: 900;
   font-size: 24px;
   line-height: 1;
 }
 
-.edit-form__fieldset {
+.form__fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.edit-form__label {
+.form__label {
   font-size: 14px;
   line-height: 1;
 }
 
-.edit-form__input {
+.form__input {
   border: none;
   margin: 0 0 13px;
   padding: 0;
@@ -25,7 +25,7 @@
 }
 
 @media screen and (max-width: 653px) {
-  .edit-form__title {
+  .form__title {
     margin: 0 0 75px;
     font-size: 18px;
   }
