@@ -117,3 +117,14 @@ function handleDestinationFormSubmit(evt) {
 }
 
 addDestinationForm.addEventListener("submit", handleDestinationFormSubmit);
+
+// like button
+const likeButtons = document.querySelectorAll(".button_type_heart");
+
+likeButtons.forEach((likeButton) => {
+  likeButton.addEventListener("click", function (evt) {
+    evt.target
+      .closest(".button_type_heart")
+      .classList.toggle("button_type_heart_active");
+  });
+});

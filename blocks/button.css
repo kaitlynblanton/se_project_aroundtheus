@@ -46,7 +46,13 @@
 .button_type_heart {
   border: none;
   background-color: #fff;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.1s ease;
+  background: url("../images/heart-icon.svg") no-repeat center;
+  background-size: 21px 19px;
+  height: 21px;
+  width: 27px;
+  border: none;
+  padding: 0;
 }
 
 .button_type_heart:hover {
@@ -54,8 +60,12 @@
   cursor: pointer;
 }
 
+.button_type_heart_active {
+  background: url("../images/heart-icon-active.svg") no-repeat center;
+}
+
 .button__icon_type_heart {
-  height: 20px;
+  height: 21px;
   width: 18px;
 }
 
