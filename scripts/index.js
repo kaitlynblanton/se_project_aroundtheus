@@ -128,3 +128,15 @@ likeButtons.forEach((likeButton) => {
       .classList.toggle("button_type_heart_active");
   });
 });
+
+// delete button
+const deleteButtons = document.querySelectorAll(".button_type_delete");
+
+deleteButtons.forEach((deleteButton) => {
+  deleteButton.addEventListener("click", function (evt) {
+    const card = document.querySelector(".card");
+
+    evt.target.closest(".card");
+    card.remove();
+  });
+});

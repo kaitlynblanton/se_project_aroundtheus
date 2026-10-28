@@ -43,6 +43,12 @@
   border: solid 2px #fff;
 }
 
+.button__icon_type_delete {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
+
 .button_type_heart {
   border: none;
   background-color: #fff;
