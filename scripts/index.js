@@ -140,3 +140,22 @@ deleteButtons.forEach((deleteButton) => {
     card.remove();
   });
 });
+
+// picture modal
+const pictureModal = document.querySelector("#picture-modal");
+const cardImages = document.querySelectorAll(".card__image");
+
+const pictureModalImage = document.querySelector(".modal__image");
+const pictureModalName = document.querySelector(".modal__name");
+
+cardImages.forEach((image) => {
+  image.addEventListener("click", function (evt) {
+    evt.target.closest(".card");
+
+    pictureModalImage.src = evt.target.src;
+    pictureModalName.textContent = evt.target.alt;
+
+    pictureModal.classList.remove("modal_closed");
+    pageOverlay.classList.add("page__overlay_closed-modal");
+  });
+});
